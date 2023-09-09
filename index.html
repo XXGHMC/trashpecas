@@ -32,7 +32,7 @@ function contar()
       document.getElementById('redirecionamento').innerHTML = 'Redirecionando agora. Bom proveito!';
       clearTimeout(contagem);
    }
-   else if (s == 1)
+   else if (s == 0)
    {
       document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundo.';
       contagem = setTimeout(contar, 1000);
