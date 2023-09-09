@@ -1,21 +1,48 @@
-<! DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-
 <head>
-
-            <meta charset=”utf -8”/>
-
-            <title>Meu Redict</title>
-
-            <meta http-equiv= “refresh” content=”5; URL=’ https://trashpecas.lojavirtualnuvem.com.br/ ‘ “/>
-
+<title>Mudamos de endereço!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="5;url=http://google.com.br">
+<style type="text/css">
+a
+{
+   color:#2098DF;
+   text-decoration:none;
+}
+body
+{
+   font-family: Verdana, Geneva, sans-serif;
+   color:#666;
+   text-align: center;
+}
+</style>
 </head>
 
 <body>
-
-...
-
+<p>Nosso portal mudou de endereço!</p>
+<p><a href="http://google.com.br/">www.google.com.br</a></p>
+<p><span id="redirecionamento" style='border:0; color:#666; text-align: center; font-family: Arial, Helvetica, sans-serif;'></span></p>
+<script>
+var s = 5; contar();
+function contar()
+{
+   if (s == 0)
+   {
+      document.getElementById('redirecionamento').innerHTML = 'Redirecionando agora. Bom proveito!';
+      clearTimeout(contagem);
+   }
+   else if (s == 1)
+   {
+      document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundo.';
+      contagem = setTimeout(contar, 1000);
+   }
+   else
+   {
+      document.getElementById('redirecionamento').innerHTML = 'Redirecionando em ' + s-- + ' segundos.';
+      contagem = setTimeout(contar, 1000);
+   }
+}
+</script>
 </body>
-
 </html>
