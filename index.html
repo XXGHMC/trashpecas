@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Linktree</title>
+    <!-- Link para o Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +53,9 @@
         }
 
         .links a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 10px 0;
             padding: 10px 20px;
             text-decoration: none;
@@ -60,6 +64,11 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background-color 0.3s ease;
+        }
+
+        .links a i {
+            margin-right: 10px;
+            font-size: 20px;
         }
 
         .links a:hover {
@@ -81,10 +90,18 @@
             <p>@seuusername</p>
         </div>
         <div class="links">
-            <a href="#" target="_blank">Link 1</a>
-            <a href="#" target="_blank">Link 2</a>
-            <a href="#" target="_blank">Link 3</a>
-            <a href="#" target="_blank">Link 4</a>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
         </div>
         <div class="footer">
             <p>Feito com ❤️</p>
